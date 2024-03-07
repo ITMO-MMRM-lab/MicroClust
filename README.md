@@ -183,17 +183,17 @@ Where,
   - ***MAXIMUM CLUSTER SIZE*** - The maximum possible size of a cluster in the dimension space after which another cluster is created
     
 - ```Mean Shift``` the algorithm is set to perform ***300*** iterations to converge
-  - ***Bandwidth*** - 
+  - ***Bandwidth*** - Defines the scale (size of the window) of mean to be calculated for the given data points
   
 - ```OPTICS``` uses the ***Euclidean*** metric to calculate the distance between samples and a ```brute force``` approach to compute nearest neighbours 
   - ***MINIMUM NUM OF SAMPLES*** - The minimum number of samples in the neighbourhood to be considered a core point (centroid for a cluster)
 
 - ```Affinity Propagation``` performs ```300``` iterations to converge using a ```Eculidean``` affinity metric and ***54*** a threshold for convergence
-  - ***DAMPING FACTOR*** - 
+  - ***DAMPING FACTOR*** - The coefficent of weightage of messages exchanged between data points to create clusters (i.e. the damping effect on each message after reaching a point & returning during clustering cycle)
 
 - ```BIRCH```
-  - ***THRESHOLD*** -
-  - ***BRANCHING FACTOR*** - 
+  - ***THRESHOLD*** - The distance between closest subclusters above which the subclusters are merged into a single cluster
+  - ***BRANCHING FACTOR*** -  The maximuim number oif clustering feature trees under each node, above which subclusters are created
 
 
 
