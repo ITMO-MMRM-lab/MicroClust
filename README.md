@@ -12,7 +12,7 @@
 
 Images from an atomic force microsope (AFM), a scanning electorn microsope (SEM) or similar imaging modalities, can be classifed using 12 of the most widely used clustering algorithms which can be further validated using Ground truth and self-evaluatory metrics. The toolbox can perform a 1D and 2D Fourier transform on the image data prior to classification. 
 
-![MicroClust](Add-ons/Repo_Images/IMG_MicroClust_Compressed.png)
+![MicroClust](Add_ons/Repo_Images/IMG_MicroClust_Compressed.png)
 
 
 #### Algorithims available are: 
@@ -57,12 +57,12 @@ The experiments & results from the work [LINK TO PAPER](LINK TO PAPER) is availa
 
 An overview of the simulations performed is shown in the figure below:
 
-![Overview](Add-ons/Repo_Images/IMG_Outline.jpg)
+![Overview](Add_ons/Repo_Images/IMG_Outline.jpg)
 
 
 The following image visualizes the transformation performed within the toolkit to feed data to the algorithms
 
-![Overview](Add-ons/Repo_Images/IMG_Transformation.png)
+![Overview](Add_ons/Repo_Images/IMG_Transformation.png)
 
 
 The ```Simulations``` directory consists of three cases of experiments where specific features of the AFM data were being sought. 
