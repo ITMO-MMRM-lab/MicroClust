@@ -6,7 +6,10 @@ import numpy as np
 import pandas as pd
 np.random.seed(1000)
 
-def reader(FILE_PATH): # Input is given as the Path of the Folder Where all Data is stored. 
+# ftype = 'txt', 'csv' ...
+# delim = '\t', ',' ...
+
+def reader(FILE_PATH, ftype, delim): # Input is given as the Path of the Folder Where all Data is stored. 
     
     # Change Directory of the Kernel
     os.chdir(FILE_PATH) #os.getcwd()
@@ -16,7 +19,7 @@ def reader(FILE_PATH): # Input is given as the Path of the Folder Where all Data
         
     # Checking if all files are TXT or not, Read only TXT files
     for file in os.listdir(): 
-        if file.endswith(".txt"):
+        if file.endswith(ftype):
             file_paths.append(f"{FILE_PATH}\{file}")   
 
     # A Dictionary to store the Path of each File with an ID Number (assigned from 0 - max)
@@ -29,7 +32,7 @@ def reader(FILE_PATH): # Input is given as the Path of the Folder Where all Data
     # A Dictionary to store the DATA
     b = {}   
     for i in range(len(a)):
-        b[i] = pd.read_csv(a[i], delimiter = "\t", header = None) # Delimiter can be added as a feature or manually changed when required.
+        b[i] = pd.read_csv(a[i], delimiter = delim, header = None) # Delimiter can be added as a feature or manually changed when required.
     
     # Taking the Dimension of the first file. (It is assumed that the Files will have same shape- has to be modded) # What happens if Data of Different Dimensions are give...? Something to be done in the future.
     D1, D2 = b[0].shape 

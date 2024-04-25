@@ -104,12 +104,15 @@ To load data into your workspace, use:
 import Worker.DATA_READER as DR
 ```
 ```
-data, original, adrs = DR.reader(<DIRECTORY OF AFM DATA>)
+data, original, adrs = DR.reader(<DIRECTORY OF AFM DATA>, <FILE TYPE>, <DELIMITER>)
 ```
 where, 
 ```data``` stores the data in the vectorized format as shown in the previous section. The raw data is used computation and metric calculation. 
 ```original``` is used to create visualizations of the data fed (before and after classification).
 ```adrs``` is a dictionary to store the individual ```path``` of each file being used (as a reference).
+
+```FILE TYPE``` is the file type such as '.csv', '.txt'
+```DELIMITER``` is the file type such as ',', '\t'
 
 - *Peforming 1D and 2D Fourier Transforms*
 ```

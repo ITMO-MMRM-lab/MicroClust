@@ -18,7 +18,7 @@ def TXT2CSV(txt_folder):
     # Checking if all files are TXT or not, Read only TXT files
     for file in os.listdir(): 
         if file.endswith(".txt"):
-            file_paths.append(f"{FILE_PATH}\{file}")   
+            file_paths.append(f"{txt_folder}\{file}")   
 
 
     # A Dictionary to store the Path of each File with an ID Number (assigned from 0 - max)
