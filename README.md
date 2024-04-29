@@ -297,7 +297,7 @@ If you use this toolbox, please cite the following paper:
 *Ashish T. S. Ireddy, Fares D. E. Ghorabe, Ekaterina I. Shishatskaya, Galina A. Ryltseva, Alexey E. Dudaev, Dmitry A. Kozodaev, Michael Nosonovsky, Ekaterina V. Skorb, and Pavel S. Zun*
 ***ACS Omega*** 
 *DOI: 10.1021/acsomega.4c02502*
-![https://doi.org/10.1021/acsomega.4c02502](https://doi.org/10.1021/acsomega.4c02502)
+[https://doi.org/10.1021/acsomega.4c02502](https://doi.org/10.1021/acsomega.4c02502)
 
 
 
